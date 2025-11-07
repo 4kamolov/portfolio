@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docs Page</title>
+    <link rel="stylesheet" href="https://4kamolov.github.io/docs/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Quick Bootstrap-like container */
+        .row { display: flex; flex-wrap: wrap; margin: -10px; }
+        .col { padding: 10px; flex: 1; min-width: 250px; }
+        h1,h2,h3,h4,h5,h6 { font-family: 'Montserrat', sans-serif; }
+        p, li { font-family: 'Inter', sans-serif; line-height: 1.5; }
+        nav { display: flex; justify-content: space-between; align-items: center; padding: 10px 20px; }
+        nav .btn { margin-left: 5px; }
+        .card { padding: 20px; margin-bottom: 20px; border-radius: 10px; transition: all 0.3s; }
+        .card:hover { transform: translateY(-3px); }
+        code { background: rgba(255,255,255,0.1); padding: 2px 5px; border-radius: 4px; }
+        pre { background: rgba(255,255,255,0.05); padding: 10px; border-radius: 6px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <!-- Progress Bar -->
+    <div id="progress-bg"></div>
+    <div id="progress-bar"></div>
+    
+    <!-- Navigation -->
+    <nav class="blur">
+        <h2 lang="title">Docs Page</h2>
+        <div>
+            <button id="lang-uz" class="btn btn-hover">UZ</button>
+            <button id="lang-ru" class="btn btn-hover">RU</button>
+            <button id="lang-en" class="btn btn-hover">EN</button>
+            <button id="lang-system" class="btn btn-hover">System</button>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col blur" style="max-width: 300px;">
+                <h3 lang="sidebar">Contents</h3>
+                <ul>
+                    <li><a href="#section1" lang="sec1">Section 1</a></li>
+                    <li><a href="#section2" lang="sec2">Section 2</a></li>
+                    <li><a href="#section3" lang="sec3">Section 3</a></li>
+                </ul>
+            </div>
+            
+            <!-- Main Content -->
+            <div class="col" style="flex:3;">
+                <div class="card blur" id="section1">
+                    <h3 lang="sec1">Section 1</h3>
+                    <p lang="sec1text">This section explains the usage of buttons, progress bar, ripple, and toast notifications.</p>
+                    <button class="btn ripple" copytext lang="copybtn">Copy Text</button>
+                </div>
+                
+                <div class="card blur" id="section2">
+                    <h3 lang="sec2">Section 2</h3>
+                    <p lang="sec2text">You can use different toast notifications: success or error.</p>
+                    <button class="btn ripple" toastS="successKey">Success Toast</button>
+                    <button class="btn ripple" toastE="errorKey">Error Toast</button>
+                </div>
+                
+                <div class="card blur" id="section3">
+                    <h3 lang="sec3">Section 3</h3>
+                    <p lang="sec3text">Language switching demo with JSON-based multi-language support.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://4kamolov.github.io/docs/js/script.js"></script>
+</body>
+</html>

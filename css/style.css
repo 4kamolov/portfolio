@@ -52,10 +52,19 @@
   border: 2px solid rgba(255, 255, 255, 0.2);
 }
 
-/* faqat qo'shtirnoqlarni joylash uchun kerak bo'ladigan qism */
 .about-left-wrap {
   position: relative;
-  padding: 28px 75px; /* qo'shtirnoqlar uchun ichki bo'shliq */
+  padding: 28px 75px;
+}
+
+@media (max-width: 480px) {
+ .about-left-wrap {
+   padding: 28px 75px;
+ } 
+
+ .contact-wrapper {
+    padding: 20px;
+ }
 }
 
 .quote-open,
@@ -676,3 +685,10 @@ user-select: none;
     padding: 5px;
   }
 }
+
+
+
+
+
+
+/* docs style */

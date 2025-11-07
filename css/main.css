@@ -6,6 +6,7 @@
   --second-color: #0370be;
   --third-color: #cfe3f0;
   --fourth-color: #ccc;
+
   --hover-background: rgba(255, 255, 255, 0.2);;
   --glass-backdrop: blur(6px);
   --glass-background: rgba(63, 81, 117, 0.2);
@@ -18,6 +19,10 @@ background: var(--glass-background);
 border: var(--glass-border);
 box-shadow: var(--glass-shadow); */
 
+a {
+  text-decoration-line: none;
+  color: #fff;
+}
 
 .animate-on-scroll {
   gap: clamp(30px, 6vw, 50px);
@@ -175,7 +180,9 @@ a {
   animation: 3s spin linear infinite;
 }
 .card::before {
-  filter: blur(1.5rem);
+  filter: 
+  
+  (1.5rem);
   opacity: 0.5;
 }
 @keyframes spin {
