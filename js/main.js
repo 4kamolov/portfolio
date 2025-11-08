@@ -74,7 +74,7 @@ copyText.addEventListener("click", () => {
     }
     
     const copiedMsg = translations[lang]["copiedText"];
-
+    
     showToast(copiedMsg, "#39FF14", 3000);
   });
 });

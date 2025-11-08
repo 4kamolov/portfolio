@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100..900;1,100..900&display=swap");
 /* main css/> */
 :root {
   --base-color: #00bfff;
@@ -7,7 +7,7 @@
   --third-color: #cfe3f0;
   --fourth-color: #ccc;
 
-  --hover-background: rgba(255, 255, 255, 0.2);;
+  --hover-background: rgba(255, 255, 255, 0.2);
   --glass-backdrop: blur(6px);
   --glass-background: rgba(63, 81, 117, 0.2);
   --glass-border: 1px solid rgba(255, 255, 255, 0.2);
@@ -53,8 +53,6 @@ a {
   transition: background 0.3s ease;
 }
 
-
-
 ::-webkit-scrollbar-thumb:hover {
   background: var(--base-color);
 }
@@ -64,7 +62,7 @@ body {
   color: white;
   /* font-family: "Segoe UI", "Segoe UI Variable", "Segoe UI Historic",
   "Segoe UI Emoji", sans-serif; */
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   overflow-x: hidden !important;
 }
 .container {
@@ -85,7 +83,7 @@ a {
   gap: 3px;
 }
 .db {
- display: block;
+  display: block;
 }
 .toast {
   position: fixed;
@@ -111,7 +109,7 @@ a {
   margin: 0 0 3px 0;
 }
 .toast.show {
-  right: 20px; 
+  right: 20px;
   opacity: 1;
 }
 
@@ -162,12 +160,12 @@ a {
   height: 100%;
   width: 100%;
   background-image: conic-gradient(
-  from var(--angle),
-  #ff4545,
-  #00ff99,
-  #006aff,
-  #ff0095,
-  #ff4545
+    from var(--angle),
+    #ff4545,
+    #00ff99,
+    #006aff,
+    #ff0095,
+    #ff4545
   );
   top: 50%;
   left: 50%;
@@ -178,9 +176,7 @@ a {
   animation: 3s spin linear infinite;
 }
 .card::before {
-  filter: 
-  
-  (1.5rem);
+  filter: (1.5rem);
   opacity: 0.5;
 }
 @keyframes spin {
@@ -224,17 +220,6 @@ a {
   z-index: -1;
   pointer-events: none;
 }
-
-/* .footer-bg {
-position: absolute;
-width: 100%;
-height: 230px;
-background: url("../images/backgraunds/footerblue.png") no-repeat center
-bottom;
-background-size: 120% auto;
-z-index: -1;
-} */
-
 /* backgrounds, slidedown & blur */
 /* slide top */
 #backToTop {
@@ -255,7 +240,7 @@ z-index: -1;
   display: flex;
   align-items: center;
   justify-content: center;
-  
+
   /* animatsiya uchun */
   opacity: 0;
   transform: translateY(10px); /* biroz pastga boshlab boshlash */
@@ -484,8 +469,14 @@ z-index: -1;
   align-items: center;
   justify-content: center;
   background: url("../images/backgraunds/footerblue.png") no-repeat center
-  bottom;
+    bottom;
   background-size: 110% 80%;
+}
+
+.footer-desc {
+  font-size: 14px;
+  color: var(--fourth-color);
+  margin: 4px 0 0 4px;
 }
 
 .footer-wrapper {
@@ -494,6 +485,10 @@ z-index: -1;
   margin-bottom: 20px;
   padding: 20px;
   border-radius: 30px;
+}
+
+.margin-top-f {
+  margin-top: 21px;
 }
 
 .footer-content {
@@ -560,67 +555,67 @@ z-index: -1;
     width: 95%;
     padding-inline: 10px;
   }
-  
+
   .header-bg {
     background-size: 118% auto;
   }
-  
+
   .about-left-wrap {
     margin-left: 0px !important;
   }
-  
+
   .about-right-wrap {
     margin-right: 0px !important;
   }
-  
+
   .about-wrapper {
     flex-direction: column;
     gap: 30px;
     margin-block: 80px 150px;
     text-align: center;
   }
-  
+
   .my-photo {
     width: 250px;
     height: 250px;
   }
-  
+
   .about-text {
     font-size: 36px;
   }
-  
+
   .about-title {
     width: 100%;
     font-size: 20px;
   }
-  
+
   .about-desc {
     font-size: 14px;
   }
-  
+
   .wrapper-signprime {
     flex-direction: column;
     row-gap: 10px;
   }
-  
+
   .singup {
     width: 200px;
     height: 35px;
     font-size: 12px;
     padding: 0 12px;
   }
-  
+
   /* Footer */
-  
+
   .footer-bg {
     background-size: 170%;
   }
-  
+
   .footer-wrapper {
     width: 70%;
     padding: 20px;
   }
-  
+
   .footer-content {
     width: 100%;
     flex-direction: column;
@@ -635,53 +630,53 @@ z-index: -1;
   .skills {
     display: none;
   }
-  
+
   .about-section {
     margin-block: 10px 20px !important;
   }
-  
+
   .intro-text {
     font-size: 20px;
   }
-  
+
   .my-photo {
     width: 200px;
     height: 200px;
   }
-  
+
   .about-text {
     font-size: 28px;
   }
-  
+
   .about-title {
     font-size: 18px;
   }
-  
+
   .about-desc {
     font-size: 13px;
   }
-  
+
   .wrapper-signprime {
     flex-direction: column;
     gap: 8px;
   }
-  
+
   .singup {
     width: 160px;
     height: 32px;
     font-size: 11px;
     padding: 0 10px;
   }
-  
+
   .footer-bg {
     background-size: 170%;
   }
-  
+
   .footer-wrapper {
     width: 70%;
     padding-inline: 20px;
   }
-  
+
   .footer-content {
     width: 100%;
     display: flex;
@@ -691,16 +686,14 @@ z-index: -1;
 
 /* Juda kichik ekranlar (max-width: 480px) */
 @media (max-width: 480px) {
-  
-  
   .header-bg {
     background-size: 300% auto;
   }
-  
+
   .skills {
     display: none;
   }
-  
+
   .about-section {
     margin-block: 10px 10px !important;
   }
@@ -708,66 +701,66 @@ z-index: -1;
     width: 100%;
     padding-inline: 10px;
   }
-  
+
   .logo {
     font-size: 10px;
     padding: 0;
     margin: 0;
   }
-  
+
   .nav-link {
     font-size: 14px;
     padding: 3px;
   }
-  
+
   .navbar {
     width: 80%;
     padding-inline: 16px;
   }
-  
+
   .github-text {
     display: none;
   }
-  
+
   .about-wrapper {
     gap: 20px;
   }
-  
+
   .my-photo {
     width: 150px;
     height: 150px;
   }
-  
+
   .intro-text {
     font-size: 18px;
   }
-  
+
   .about-text {
     font-size: 22px;
   }
-  
+
   .about-title {
     font-size: 16px;
   }
-  
+
   .about-desc {
     font-size: 12px;
   }
-  
+
   .wrapper-signprime {
     flex-direction: column;
     gap: 8px;
   }
-  
+
   .singup {
     width: 140px;
     height: 30px;
     font-size: 10px;
     padding: 0 8px;
   }
-  
+
   /* Footer */
-  
+
   .footer-bg {
     background-size: 170%;
   }
@@ -776,12 +769,12 @@ z-index: -1;
     padding-inline: 20px;
     padding: 15px;
   }
-  
+
   .footer-content {
     flex-direction: column;
     gap: 12px;
   }
-  
+
   .footer-column a,
   .footer-column h4 {
     font-size: 13px;
