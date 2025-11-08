@@ -17,9 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
     setTimeout(() => circle.remove(), 600);
   });
 });
-// ripple
-
-// Unified showToast function with icon support and custom duration
+// ripple>
 function showToast(message, color = "#39FF14", duration = 3000) {
   const toast = document.getElementById("Toast");
   const notif = document.getElementById("toast-notif");
@@ -61,38 +59,26 @@ function showToast(message, color = "#39FF14", duration = 3000) {
     toast.classList.remove("show");
   }, duration);
 }
-
-// Form validation + send message loader
-
-// Optional: [toast] attribute elements
 document.querySelectorAll("[toast]").forEach((el) => {
   el.addEventListener("click", () => {
     const message = el.getAttribute("toast-text") || "Undefind!?";
     showToast(message, "#39FF14", 3000);
   });
 });
-
-// Notification and contact me !
-
 const copyText = document.getElementById("copyText");
-
 copyText.addEventListener("click", () => {
   navigator.clipboard.writeText(copyText.innerText).then(() => {
-    // Tanlangan tilni olish
     let lang = localStorage.getItem("selectedLang") || "SystemLang";
     if (lang === "SystemLang") {
       lang = getSystemLanguage();
     }
     
-    // JSONdagi copiedText matnini olish
     const copiedMsg = translations[lang]["copiedText"];
-    
-    // Toastni yashil rangda chiqarish
+
     showToast(copiedMsg, "#39FF14", 3000);
   });
 });
-
-// Toast funksiyasi
+// Toast function>
 const bar = document.getElementById("progress-bar");
 bar.style.width = "10%";
 setTimeout(() => {
@@ -119,7 +105,7 @@ window.onload = function () {
   }, 1800);
   // loading
 };
-
+// loading>
 document.querySelectorAll('.dropdown a[href^="#"]').forEach((link) => {
   link.addEventListener("click", function (e) {
     e.preventDefault();
@@ -142,27 +128,9 @@ document.querySelectorAll('.dropdown a[href^="#"]').forEach((link) => {
     }
   });
 });
-// smooth scroll
-
-// const backToTopBtn = document.getElementById("backToTop");
-// function toggleBackToTop() {
-//   if (window.scrollY > 200) {
-//     backToTopBtn.classList.add("show");
-//   } else {
-//     backToTopBtn.classList.remove("show");
-//   }
-// }
-// window.addEventListener("scroll", toggleBackToTop);
-// window.addEventListener("load", toggleBackToTop);
-// // Click qilib tepaga qaytarish
-// backToTopBtn.addEventListener("click", () => {
-//   window.scrollTo({ top: 0, behavior: "smooth" });
-// });
-// // Scroll to Top Button
-
+// smooth scroll>
 // Translate Language Switcher
 let translations = {};
-
 async function loadTranslations() {
   try {
     const res = await fetch("data/lang.json");
@@ -174,7 +142,6 @@ async function loadTranslations() {
     console.error("Error data/lang.json:", err);
   }
 }
-
 function getSystemLanguage() {
   // Brauzer tilini olish
   const browserLang = navigator.language || navigator.userLanguage;
@@ -191,7 +158,6 @@ function getSystemLanguage() {
   // Aks holda English qaytarish
   return "en";
 }
-
 function setLanguage(lang) {
   let actualLang = lang;
   
@@ -223,9 +189,7 @@ function setLanguage(lang) {
   
   document.getElementById("selected-lang").textContent = displayText;
 }
-
 setLanguage("en");
-
 // Dropdown til tanlash event
 document.querySelectorAll(".dropdown a[data-lang]").forEach((link) => {
   link.addEventListener("click", (e) => {
@@ -234,10 +198,8 @@ document.querySelectorAll(".dropdown a[data-lang]").forEach((link) => {
     setLanguage(selectedLang);
   });
 });
-
 loadTranslations();
 // Translate Language Switcher
-
 document.querySelectorAll(".lang-ahref").forEach((link) => {
   link.addEventListener("click", (e) => {
     e.preventDefault();
@@ -258,9 +220,7 @@ document.querySelectorAll(".lang-ahref").forEach((link) => {
     showToast(toastMsg, "#39FF14", 5000); //
   });
 });
-
 const sections = document.querySelectorAll(".animate-on-scroll");
-
 const observer = new IntersectionObserver(
   (entries, observer) => {
     entries.forEach((entry) => {
@@ -271,10 +231,9 @@ const observer = new IntersectionObserver(
     });
   },
   {
-    threshold: 0.2, // elementning 20% qismi ko‘ringanda animatsiya boshlanadi
+    threshold: 0.2,
   }
 );
-
 sections.forEach((section) => {
   observer.observe(section);
 });

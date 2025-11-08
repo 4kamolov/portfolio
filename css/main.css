@@ -89,14 +89,14 @@ a {
 }
 .toast {
   position: fixed;
-  top: 20px; /* yuqorida chiqadi */
-  right: -300px; /* ekrandan tashqarida boshlanadi */
+  top: 10px; /* yuqorida chiqadi */
+  right: -200px; /* ekrandan tashqarida boshlanadi */
   backdrop-filter: var(--glass-backdrop);
   background: var(--glass-background);
   border: var(--glass-border);
   box-shadow: var(--glass-shadow);
   padding: 10px 15px;
-  border-left: 3px solid;
+  border-left: 3.2px solid;
   border-radius: 0 3px 3px 0;
   display: flex;
   align-items: center;
@@ -107,13 +107,11 @@ a {
   transition: all 0.5s ease;
   z-index: 9999;
 }
-
 .toast p {
   margin: 0 0 3px 0;
 }
-
 .toast.show {
-  right: 20px; /* o‘ng tomondan ichkariga kiradi */
+  right: 20px; 
   opacity: 1;
 }
 
